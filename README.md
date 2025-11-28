@@ -125,13 +125,17 @@ From the project root:
 
 ```bash
 g++ -std=c++11 -I./src src/*.cpp -o emulator
+```
+
 
 Hello World Program
 
 ```bash
 ./emulator run asm/hello_world.asm
+```
 
 Fibonacci program
 
 ```bash
 ./emulator run asm/fibonacci.asm
+```
