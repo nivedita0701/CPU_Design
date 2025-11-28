@@ -128,6 +128,7 @@ From the project root:
 g++ -std=c++11 -I./src src/*.cpp -o emulator
 ```
 
+### Run
 
 Hello World Program
 
