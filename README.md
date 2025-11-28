@@ -1,8 +1,9 @@
 # CMPE 220 – Software CPU Design Project (Part 1)
 
 **Course:** CMPE 220 – System Software  
-**Instructor:** *Prof. Ishie Eshwar* 
-**Project:** Part 1 – Software CPU Design  
+**Instructor:** *Prof. Ishie Eshwar*   
+**Project:** Part 1 – Software CPU Design   
+**Semester:** Fall 2025  
 
 
 ## Overview
