@@ -1,11 +1,11 @@
 # CMPE 220 – Software CPU Design Project (Part 1)
 
 **Course:** CMPE 220 – System Software  
+**Instructor:** *Prof. Ishie Eshwar* 
 **Project:** Part 1 – Software CPU Design  
 
----
 
-## 📘 Overview
+## Overview
 
 This repository contains the **Part 1** implementation of a 16-bit Software CPU written in C++.  
 It includes:
@@ -18,9 +18,8 @@ It includes:
   - **Fibonacci Sequence**
   - a simple “timer” / loop demo to illustrate Fetch/Compute/Store
 
----
 
-## 🧩 CPU Architecture (Part 1)
+## CPU Architecture (Part 1)
 
 ### Register File
 
@@ -33,9 +32,8 @@ It includes:
 
 All registers are 16-bit.
 
----
 
-## ⚙️ Instruction Set (Part 1)
+## Instruction Set (Part 1)
 
 ### Instruction Word Layout (16 bits)
 
@@ -57,9 +55,9 @@ All registers are 16-bit.
 | `JUMPEQ label`     |  0xB   | J    | Jump if Zero flag is set                    |
 | `HALT`             |  0xF   | —    | Stop execution                              |
 
----
 
-## 🧠 Memory Map (Part 1)
+
+## Memory Map (Part 1)
 
 The CPU uses a 16-bit address space (64 KiB) divided into code, data, stack, and MMIO regions.
 
@@ -78,7 +76,6 @@ Address (hex, 64 KiB total)
         |                CODE                |  Program instructions (~4 KiB)
         +------------------------------------+
 ```
----
 
 
 - `CODE_START = 0x0000`
@@ -88,9 +85,8 @@ Address (hex, 64 KiB total)
 
 Writing a byte/word to the MMIO address (0xFF00) prints a character (used by Hello World).
 
----
 
-## 🧮 Emulator Components
+## Emulator Components
 
 All implementation is in the `src/` directory:
 
@@ -120,9 +116,8 @@ All implementation is in the `src/` directory:
     - (Optionally) `step <file.asm>` – step through instructions  
   - Prints final register state and a memory dump
 
----
 
-## 💻 Build & Run (Part 1)
+## Build & Run (Part 1)
 
 ### Build
 
@@ -130,3 +125,13 @@ From the project root:
 
 ```bash
 g++ -std=c++11 -I./src src/*.cpp -o emulator
+
+Hello World Program
+
+```bash
+./emulator run asm/hello_world.asm
+
+Fibonacci program
+
+```bash
+./emulator run asm/fibonacci.asm
